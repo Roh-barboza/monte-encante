@@ -1,0 +1,32 @@
+# robots.txt for Monte Encante
+# Produced by https://www.verifiedemail.com/robots-creator.html
+
+User-agent: *
+Allow: /
+Allow: /*.html$
+Allow: /*.xml$
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemaps
+Sitemap: https://monteencante.com.br/sitemap.xml
+
+# Allow major search engines to crawl
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Block unwanted bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
