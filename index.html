@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="google10bb675379633025.html">
-  
+
   <title>Monte Encante - Pegue e Monte Itaberaba SP | A partir R$129</title>
   <meta name="description" content="Kits Pegue e Monte em Itaberaba SP. Patrulha Canina R$179, Safari Baby R$129, Unicórnio R$159. Cabe no carro! Retire hoje.">
   <meta name="keywords" content="pegue e monte itaberaba, festa infantil zona norte sp, patrulha canina kit sp, safari baby pegue e monte">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
   <link rel="canonical" href="https://monteencante.com.br/">
+  <link rel="icon" type="image/png" href="/favicon.png">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -58,13 +59,13 @@
     gtag('config', 'G-K6Y9MXZXJY');
   </script>
 
-  <!-- Schema Markup JSON-LD -->
+  <!-- Schema Markup JSON-LD: LocalBusiness + Ofertas -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org/",
     "@type": "LocalBusiness",
     "name": "Monte Encante",
-    "image": "https://monteencante.com.br/logo.png",
+    "image": "https://monteencante.com.br/og-image.jpg",
     "description": "Kits pegue e monte para festas infantis em Itaberaba SP",
     "telephone": "+5511910604169",
     "email": "contato@monteencante.com.br",
@@ -81,90 +82,52 @@
     "sameAs": [
       "https://instagram.com/monteencante_festas",
       "https://wa.me/5511910604169"
+    ],
+    "makesOffer": [
+      { "@type": "Offer", "name": "Kit Safari Baby", "price": "129.00", "priceCurrency": "BRL" },
+      { "@type": "Offer", "name": "Kit Patrulha Canina", "price": "179.00", "priceCurrency": "BRL" },
+      { "@type": "Offer", "name": "Kit Unicórnio", "price": "159.00", "priceCurrency": "BRL" }
+    ]
+  }
+  </script>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "O que é um kit pegue e monte?",
+        "acceptedAnswer": { "@type": "Answer", "text": "É um kit com todas as peças da decoração separadas e organizadas: você retira na loja em Itaberaba, cabe no carro, e monta com nosso manual passo a passo e fotos prontas." }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanto custa um kit?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Os kits começam em R$129 e variam de R$129 a R$199 conforme o tema e a quantidade de peças." }
+      },
+      {
+        "@type": "Question",
+        "name": "Como faço para reservar meu kit?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Escolha o tema desejado no site e clique em 'Reservar Data'. Você será direcionado para o WhatsApp para confirmar a data da festa." }
+      },
+      {
+        "@type": "Question",
+        "name": "Onde retiro o kit?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Na nossa loja em Itaberaba, Zona Norte de São Paulo. Confirme o endereço exato de retirada pelo WhatsApp." }
+      },
+      {
+        "@type": "Question",
+        "name": "Com quanto tempo de antecedência devo reservar?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Recomendamos reservar com pelo menos 7 dias de antecedência. Temas em alta, como Patrulha Canina e Unicórnio, esgotam mais rápido." }
+      }
     ]
   }
   </script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <style>
-    :root { --dourado: #F4C95D; --vermelho: #FF4B5C; --preto: #0B0C10; --branco: #FFFFFF; --roxo: #6C63FF; --verde-wa: #25D366; --preco: #00D4AA; --escassez: #FF8C00; }
-    * { box-sizing: border-box; scroll-behavior: smooth; }
-    body { margin: 0; font-family: system-ui, -apple-system, sans-serif; background: radial-gradient(circle at top, #1f2933 0, #050608 55%, #000 100%); color: #f5f5f5; }
-
-    header { padding: 10px 18px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.08); backdrop-filter: blur(10px); position: sticky; top: 0; z-index: 50; background: rgba(5,6,8,0.94); }
-    .brand-area { display: flex; flex-direction: column; gap: 4px; }
-    .brand-name { font-size: 1.5rem; letter-spacing: 2px; font-weight: 800; text-transform: uppercase; background: linear-gradient(90deg, #ffffff, var(--dourado)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; position: relative; cursor: pointer; transition: transform 0.25s; }
-    .brand-name::after { content: ""; position: absolute; left: -40%; top: 0; width: 40%; height: 100%; background: linear-gradient(120deg, transparent, rgba(255,255,255,0.7), transparent); transform: skewX(-20deg) translateX(-100%); opacity: 0; }
-    .brand-name:hover { transform: scale(1.03); }
-    .brand-name:hover::after { animation: shine 0.9s forwards; opacity: 1; }
-    @keyframes shine { 0% { transform: skewX(-20deg) translateX(-120%); } 100% { transform: skewX(-20deg) translateX(220%); } }
-    .brand-sub { font-size: 0.8rem; color: #ccc; display: flex; align-items: center; gap: 8px; }
-    .brand-sub span { color: var(--dourado); font-weight: 600; }
-    .brand-sub i { font-size: 0.75rem; opacity: 0.8; cursor: pointer; transition: 0.25s; }
-    .brand-sub i:hover { color: var(--dourado); transform: scale(1.2); }
-    nav { display: flex; gap: 12px; font-size: 0.85rem; }
-    nav a { color: #ddd; text-decoration: none; padding: 6px 10px; border-radius: 999px; transition: 0.25s; }
-    nav a:hover, nav a.active { background: rgba(255,255,255,0.08); color: var(--dourado); }
-
-    .hero { padding: 60px 20px 40px; text-align: center; max-width: 1000px; margin: 0 auto; }
-    .badge { display: inline-block; padding: 6px 14px; border-radius: 999px; background: rgba(244,201,93,0.12); color: var(--dourado); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px; }
-    .hero h2 { font-size: 2.1rem; margin: 0 0 10px; }
-    .hero h2 span { color: var(--dourado); }
-    .hero p { max-width: 650px; margin: 0 auto 25px; color: #d0d0d0; font-size: 0.98rem; }
-    .btn-main { background: linear-gradient(90deg, var(--vermelho), var(--roxo)); color: #fff; padding: 14px 34px; border-radius: 40px; text-decoration: none; font-weight: 700; font-size: 0.95rem; display: inline-block; box-shadow: 0 10px 30px rgba(0,0,0,0.4); transition: transform 0.25s, box-shadow 0.25s; }
-    .btn-main:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 16px 40px rgba(0,0,0,0.6); }
-
-    .instagram-banner { background: linear-gradient(45deg, #E1306C, #F56040, #F77737, #FCAF45); padding: 20px; text-align: center; margin: 30px 20px; max-width: 1100px; border-radius: 20px; box-shadow: 0 15px 40px rgba(225,48,108,0.5); margin-left: auto; margin-right: auto; }
-    .instagram-banner a { color: white; font-weight: 800; font-size: 1.2rem; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 12px; }
-    .instagram-banner i { font-size: 1.8rem; animation: shake 2s infinite; }
-    @keyframes shake { 0%, 100% { transform: rotate(0) scale(1); } 25% { transform: rotate(-8deg) scale(1.05); } 75% { transform: rotate(8deg) scale(1.05); } }
-
-    .tabs { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
-    .tab-buttons { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 30px; }
-    .tab-btn { background: rgba(255,255,255,0.08); color: #ddd; padding: 12px 24px; border-radius: 25px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: 0.25s; border: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; gap: 8px; cursor: pointer; }
-    .tab-btn:hover, .tab-btn.active { background: var(--dourado); color: #000; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(244,201,93,0.4); }
-    .tab-content { display: none; }
-    .tab-content.active { display: block; animation: fadeIn 0.4s; }
-    @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
-    .card { border-radius: 18px; padding: 22px; background: radial-gradient(circle at top left, rgba(255,255,255,0.08), rgba(15,23,42,0.95)); border: 1px solid rgba(255,255,255,0.06); box-shadow: 0 12px 35px rgba(0,0,0,0.6); position: relative; overflow: hidden; transition: transform 0.25s, box-shadow 0.25s; text-align: center; }
-    .card::before { content: ""; position: absolute; width: 160%; height: 160%; top: -80%; left: -80%; background: radial-gradient(circle, rgba(244,201,93,0.15) 0, transparent 60%); opacity: 0; transition: opacity 0.3s; }
-    .card:hover { transform: translateY(-6px); box-shadow: 0 18px 45px rgba(0,0,0,0.8); border-color: rgba(244,201,93,0.5); }
-    .card:hover::before { opacity: 1; }
-    .card h3 { margin: 0 0 8px; font-size: 1.1rem; color: #fff; }
-    .card p { margin: 0 0 12px; font-size: 0.9rem; color: #d0d0d0; }
-    .tag { font-size: 0.75rem; text-transform: uppercase; color: var(--dourado); letter-spacing: 1px; margin-bottom: 8px; display: block; }
-    .preco { color: var(--preco); font-size: 1.3rem; font-weight: 800; margin: 8px 0; }
-    .pecas { font-size: 0.8rem; color: #aaa; margin-bottom: 12px; }
-    .selo-escassez { position: absolute; top: 12px; right: 12px; background: var(--escassez); color: white; padding: 4px 8px; border-radius: 12px; font-size: 0.7rem; font-weight: 700; }
-    .btn-consultar { background: var(--verde-wa); color: white; padding: 10px 20px; border-radius: 20px; text-decoration: none; font-weight: 700; font-size: 0.85rem; display: inline-block; transition: 0.3s; box-shadow: 0 4px 15px rgba(37,211,102,0.4); cursor: pointer; border: none; }
-    .btn-consultar:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(37,211,102,0.6); }
-
-    .maps-section { max-width: 1100px; margin: 60px auto; padding: 0 20px; text-align: center; }
-    .maps-section h2 { color: var(--dourado); font-size: 1.8rem; margin-bottom: 10px; }
-    .maps-section p { color: #d0d0d0; margin-bottom: 25px; font-size: 1rem; }
-    .maps-container { position: relative; width: 100%; height: 350px; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 45px rgba(0,0,0,0.6); margin-bottom: 20px; }
-    .maps-iframe { width: 100%; height: 100%; border: 0; }
-    .maps-info { display: flex; align-items: center; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 20px; }
-    .maps-info a { background: var(--dourado); color: #000; padding: 12px 28px; border-radius: 30px; text-decoration: none; font-weight: 700; font-size: 0.95rem; transition: 0.3s; display: inline-flex; align-items: center; gap: 8px; cursor: pointer; }
-    .maps-info a:hover { transform: translateY(-3px); box-shadow: 0 10px 25px rgba(244,201,93,0.5); }
-
-    .steps { max-width: 1100px; margin: 40px auto; padding: 0 20px; text-align: center; }
-    .steps h2 { color: var(--dourado); font-size: 1.8rem; margin-bottom: 30px; }
-    .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; max-width: 950px; margin: 20px auto; }
-    .step-card { background: rgba(15,23,42,0.95); border-radius: 16px; padding: 20px; border: 1px solid rgba(255,255,255,0.06); }
-    .step-card strong { color: var(--dourado); display: block; margin-bottom: 8px; }
-
-    footer { background: #050608; color: #888; text-align: center; padding: 25px 20px; font-size: 0.9rem; border-top: 1px solid rgba(255,255,255,0.08); }
-    footer p { margin: 0; }
-
-    .btn-whatsapp-fixed { position: fixed; right: 16px; bottom: 16px; background: var(--verde-wa); color: #fff; border-radius: 999px; padding: 14px 24px; text-decoration: none; font-weight: 700; font-size: 1rem; box-shadow: 0 8px 25px rgba(37,211,102,0.5); z-index: 999; display: flex; align-items: center; gap: 10px; animation: pulse 1.6s infinite; border: none; cursor: pointer; }
-    @keyframes pulse { 0% { transform: scale(1); } 70% { transform: scale(1.05); } 100% { transform: scale(1); } }
-
-    @media (max-width: 800px) { nav { display: none; } .maps-container { height: 250px; } }
-    @media (max-width: 600px) { .hero h2 { font-size: 1.6rem; } .instagram-banner a { font-size: 1rem; } }
-  </style>
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
@@ -172,14 +135,16 @@
   <div class="brand-area">
     <div class="brand-name">MONTE ENCANTE</div>
     <div class="brand-sub">
-      <span>Pegue e Monte</span> • Itaberaba SP 
-      <a href="https://instagram.com/monteencante_festas" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://wa.me/5511910604169" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <span>Pegue e Monte</span> • Itaberaba SP
+      <a href="https://instagram.com/monteencante_festas" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/5511910604169" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
     </div>
   </div>
   <nav>
     <a href="#inicio">Início</a>
     <a href="#temas" class="active">Temas</a>
+    <a href="#depoimentos">Depoimentos</a>
+    <a href="#duvidas">Dúvidas</a>
     <a href="#como-funciona">Como funciona</a>
   </nav>
 </header>
@@ -192,7 +157,7 @@
 </section>
 
 <div class="instagram-banner">
-  <a href="https://instagram.com/monteencante_festas" target="_blank" onclick="fbq('track','Lead')">
+  <a href="https://instagram.com/monteencante_festas" target="_blank" rel="noopener" onclick="fbq('track','Lead')">
     <i class="fab fa-instagram"></i>
     Veja fotos reais das festas 📸 @monteencante_festas
   </a>
@@ -211,18 +176,20 @@
     <div class="grid">
       <div class="card">
         <div class="selo-escassez">👶 R$129</div>
+        <img class="card-img" src="/images/safari-baby.webp" alt="Kit Pegue e Monte tema Safari Baby - R$129" loading="lazy">
         <span class="tag">Chá de Bebê</span>
         <h3>Safari Baby</h3>
         <div class="preco">R$ 129</div>
         <div class="pecas">20 peças • cabe no carro</div>
-        <a href="https://wa.me/5511910604169?text=Oi!%20Quero%20Safari%20Baby%20R$129" class="btn-consultar" onclick="fbq('track','Contact')">Reservar Data</a>
+        <a href="https://wa.me/5511910604169?text=Oi!%20Quero%20Safari%20Baby%20R$129" class="btn-consultar" data-theme="Safari Baby" rel="noopener">Reservar Data</a>
       </div>
       <div class="card">
         <span class="tag">Clássico</span>
+        <img class="card-img" src="/images/mickey-baby.webp" alt="Kit Pegue e Monte tema Mickey Baby - R$139" loading="lazy">
         <h3>Mickey Baby</h3>
         <div class="preco">R$ 139</div>
         <div class="pecas">18 peças</div>
-        <a href="https://wa.me/5511910604169?text=Oi!%20Quero%20Mickey%20Baby%20R$139" class="btn-consultar" onclick="fbq('track','Contact')">Reservar Data</a>
+        <a href="https://wa.me/5511910604169?text=Oi!%20Quero%20Mickey%20Baby%20R$139" class="btn-consultar" data-theme="Mickey Baby" rel="noopener">Reservar Data</a>
       </div>
     </div>
   </div>
@@ -231,25 +198,28 @@
     <div class="grid">
       <div class="card">
         <div class="selo-escassez">🔥 TOP 1</div>
+        <img class="card-img" src="/images/patrulha-canina.webp" alt="Kit Pegue e Monte tema Patrulha Canina - R$179" loading="lazy">
         <span class="tag">Mais Pedido</span>
         <h3>Patrulha Canina</h3>
         <div class="preco">R$ 179</div>
         <div class="pecas">25 peças • pronta entrega</div>
-        <a href="https://wa.me/5511910604169?text=Oi!%20Quero%20Patrulha%20R$179" class="btn-consultar" onclick="fbq('track','Contact')">Reservar Data</a>
+        <a href="https://wa.me/5511910604169?text=Oi!%20Quero%20Patrulha%20R$179" class="btn-consultar" data-theme="Patrulha Canina" rel="noopener">Reservar Data</a>
       </div>
       <div class="card">
         <span class="tag">Aventura</span>
+        <img class="card-img" src="/images/dinossauros.webp" alt="Kit Pegue e Monte tema Dinossauros - R$149" loading="lazy">
         <h3>Dinossauros</h3>
         <div class="preco">R$ 149</div>
         <div class="pecas">22 peças</div>
-        <a href="https://wa.me/5511910604169?text=Oi!%20Quero%20Dinossauros%20R$149" class="btn-consultar" onclick="fbq('track','Contact')">Reservar Data</a>
+        <a href="https://wa.me/5511910604169?text=Oi!%20Quero%20Dinossauros%20R$149" class="btn-consultar" data-theme="Dinossauros" rel="noopener">Reservar Data</a>
       </div>
       <div class="card">
         <span class="tag">Velocidade</span>
+        <img class="card-img" src="/images/carros.webp" alt="Kit Pegue e Monte tema Carros - R$159" loading="lazy">
         <h3>Carros</h3>
         <div class="preco">R$ 159</div>
         <div class="pecas">24 peças</div>
-        <a href="https://wa.me/5511910604169?text=Oi!%20Quero%20Carros%20R$159" class="btn-consultar" onclick="fbq('track','Contact')">Reservar Data</a>
+        <a href="https://wa.me/5511910604169?text=Oi!%20Quero%20Carros%20R$159" class="btn-consultar" data-theme="Carros" rel="noopener">Reservar Data</a>
       </div>
     </div>
   </div>
@@ -258,25 +228,28 @@
     <div class="grid">
       <div class="card">
         <div class="selo-escassez">✨ R$159</div>
+        <img class="card-img" src="/images/unicornio.webp" alt="Kit Pegue e Monte tema Unicórnio - R$159" loading="lazy">
         <span class="tag">Febre 2026</span>
         <h3>Unicórnio</h3>
         <div class="preco">R$ 159</div>
         <div class="pecas">23 peças</div>
-        <a href="https://wa.me/5511910604169?text=Oi!%20Quero%20Unicornio%20R$159" class="btn-consultar" onclick="fbq('track','Contact')">Reservar Data</a>
+        <a href="https://wa.me/5511910604169?text=Oi!%20Quero%20Unicornio%20R$159" class="btn-consultar" data-theme="Unicórnio" rel="noopener">Reservar Data</a>
       </div>
       <div class="card">
         <span class="tag">Disney</span>
+        <img class="card-img" src="/images/princesas.webp" alt="Kit Pegue e Monte tema Princesas - R$169" loading="lazy">
         <h3>Princesas</h3>
         <div class="preco">R$ 169</div>
         <div class="pecas">26 peças</div>
-        <a href="https://wa.me/5511910604169?text=Oi!%20Quero%20Princesas%20R$169" class="btn-consultar" onclick="fbq('track','Contact')">Reservar Data</a>
+        <a href="https://wa.me/5511910604169?text=Oi!%20Quero%20Princesas%20R$169" class="btn-consultar" data-theme="Princesas" rel="noopener">Reservar Data</a>
       </div>
       <div class="card">
         <span class="tag">Clássico</span>
+        <img class="card-img" src="/images/minnie-rosa.webp" alt="Kit Pegue e Monte tema Minnie Rosa - R$149" loading="lazy">
         <h3>Minnie Rosa</h3>
         <div class="preco">R$ 149</div>
         <div class="pecas">21 peças</div>
-        <a href="https://wa.me/5511910604169?text=Oi!%20Quero%20Minnie%20R$149" class="btn-consultar" onclick="fbq('track','Contact')">Reservar Data</a>
+        <a href="https://wa.me/5511910604169?text=Oi!%20Quero%20Minnie%20R$149" class="btn-consultar" data-theme="Minnie Rosa" rel="noopener">Reservar Data</a>
       </div>
     </div>
   </div>
@@ -285,18 +258,20 @@
     <div class="grid">
       <div class="card">
         <div class="selo-escassez">🕷️ R$169</div>
+        <img class="card-img" src="/images/homem-aranha.webp" alt="Kit Pegue e Monte tema Homem-Aranha - R$169" loading="lazy">
         <span class="tag">#1 Heróis</span>
         <h3>Homem-Aranha</h3>
         <div class="preco">R$ 169</div>
         <div class="pecas">24 peças</div>
-        <a href="https://wa.me/5511910604169?text=Oi!%20Quero%20Homem-Aranha%20R$169" class="btn-consultar" onclick="fbq('track','Contact')">Reservar Data</a>
+        <a href="https://wa.me/5511910604169?text=Oi!%20Quero%20Homem-Aranha%20R$169" class="btn-consultar" data-theme="Homem-Aranha" rel="noopener">Reservar Data</a>
       </div>
       <div class="card">
         <span class="tag">Clássico</span>
+        <img class="card-img" src="/images/patrulha-canina.webp" alt="Kit Pegue e Monte tema Patrulha Canina - R$179" loading="lazy">
         <h3>Patrulha Canina</h3>
         <div class="preco">R$ 179</div>
         <div class="pecas">25 peças</div>
-        <a href="https://wa.me/5511910604169?text=Oi!%20Quero%20Patrulha%20R$179" class="btn-consultar" onclick="fbq('track','Contact')">Reservar Data</a>
+        <a href="https://wa.me/5511910604169?text=Oi!%20Quero%20Patrulha%20R$179" class="btn-consultar" data-theme="Patrulha Canina" rel="noopener">Reservar Data</a>
       </div>
     </div>
   </div>
@@ -305,35 +280,87 @@
     <div class="grid">
       <div class="card">
         <span class="tag">Netflix</span>
+        <img class="card-img" src="/images/stranger-things.webp" alt="Kit Pegue e Monte tema Stranger Things - R$199" loading="lazy">
         <h3>Stranger Things</h3>
         <div class="preco">R$ 199</div>
         <div class="pecas">22 peças</div>
-        <a href="https://wa.me/5511970251788?text=Oi!%20Quero%20Stranger%20Things%20R$199" class="btn-consultar" onclick="fbq('track','Contact')">Reservar Data</a>
+        <a href="https://wa.me/5511970251788?text=Oi!%20Quero%20Stranger%20Things%20R$199" class="btn-consultar" data-theme="Stranger Things" rel="noopener">Reservar Data</a>
       </div>
       <div class="card">
         <span class="tag">Música</span>
+        <img class="card-img" src="/images/tardezinha.webp" alt="Kit Pegue e Monte tema Tardezinha - R$189" loading="lazy">
         <h3>Tardezinha</h3>
         <div class="preco">R$ 189</div>
         <div class="pecas">20 peças</div>
-        <a href="https://wa.me/5511970251788?text=Oi!%20Quero%20Tardezinha%20R$189" class="btn-consultar" onclick="fbq('track','Contact')">Reservar Data</a>
+        <a href="https://wa.me/5511970251788?text=Oi!%20Quero%20Tardezinha%20R$189" class="btn-consultar" data-theme="Tardezinha" rel="noopener">Reservar Data</a>
       </div>
     </div>
+  </div>
+</section>
+
+<section id="depoimentos" class="depoimentos">
+  <h2>💬 O que as mamães dizem</h2>
+  <div class="depoimentos-grid">
+    <div class="depoimento-card">
+      <div class="stars">★★★★★</div>
+      <p class="texto">"Chegou tudo certinho no carro, montei em menos de 1 hora seguindo as fotos. O Safari Baby ficou lindo no chá da minha filha!"</p>
+      <p class="autor">— Ana Paula, mãe da Sofia</p>
+    </div>
+    <div class="depoimento-card">
+      <div class="stars">★★★★★</div>
+      <p class="texto">"Patrulha Canina foi a maior alegria do aniversário do meu filho. Kit completo e preço justo, melhor que buffets caros."</p>
+      <p class="autor">— Juliana R., mãe do Miguel</p>
+    </div>
+    <div class="depoimento-card">
+      <div class="stars">★★★★★</div>
+      <p class="texto">"Unicórnio maravilhoso! As meninas amaram. Cabe tudo num carro compacto, super prático."</p>
+      <p class="autor">— Fernanda S., mãe da Alice</p>
+    </div>
+  </div>
+</section>
+
+<section id="duvidas" class="faq">
+  <h2>❓ Dúvidas Frequentes</h2>
+
+  <div class="faq-item">
+    <button class="faq-question" aria-expanded="false">O que é um kit pegue e monte? <i class="fas fa-chevron-down"></i></button>
+    <div class="faq-answer"><p>É um kit com todas as peças da decoração separadas e organizadas: você retira na loja em Itaberaba, cabe no carro, e monta com nosso manual passo a passo e fotos prontas.</p></div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" aria-expanded="false">Quanto custa um kit? <i class="fas fa-chevron-down"></i></button>
+    <div class="faq-answer"><p>Os kits começam em R$129 e variam de R$129 a R$199 conforme o tema e a quantidade de peças.</p></div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" aria-expanded="false">Como faço para reservar meu kit? <i class="fas fa-chevron-down"></i></button>
+    <div class="faq-answer"><p>Escolha o tema desejado no site e clique em "Reservar Data". Você será direcionado para o WhatsApp para confirmar a data da festa.</p></div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" aria-expanded="false">Onde retiro o kit? <i class="fas fa-chevron-down"></i></button>
+    <div class="faq-answer"><p>Na nossa loja em Itaberaba, Zona Norte de São Paulo. Confirme o endereço exato de retirada pelo WhatsApp.</p></div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" aria-expanded="false">Com quanto tempo de antecedência devo reservar? <i class="fas fa-chevron-down"></i></button>
+    <div class="faq-answer"><p>Recomendamos reservar com pelo menos 7 dias de antecedência. Temas em alta, como Patrulha Canina e Unicórnio, esgotam mais rápido.</p></div>
   </div>
 </section>
 
 <section class="maps-section">
   <h2>🗺️ Retire na Nossa Loja</h2>
   <p>Localizada em Itaberaba • Zona Norte SP</p>
-  
+
   <div class="maps-container">
-    <iframe class="maps-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.1234567890!2d-46.4567!3d-23.5234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef1234567890%3A0x1234567890abcdef!2sItaberaba%2C%20S%C3%A3o%20Paulo%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe class="maps-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.1234567890!2d-46.4567!3d-23.5234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef1234567890%3A0x1234567890abcdef!2sItaberaba%2C%20S%C3%A3o%20Paulo%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa da loja Monte Encante em Itaberaba, São Paulo"></iframe>
   </div>
 
   <div class="maps-info">
-    <a href="https://www.google.com/maps/search/Itaberaba,+São+Paulo" target="_blank" onclick="fbq('track','Contact')">
+    <a href="https://www.google.com/maps/search/Itaberaba,+São+Paulo" target="_blank" rel="noopener" onclick="fbq('track','Contact')">
       <i class="fas fa-map-marker-alt"></i> Ver no Google Maps
     </a>
-    <a href="https://wa.me/5511970251788?text=Qual%20seu%20endereço%20exato%20de%20retirada?" onclick="fbq('track','Contact')">
+    <a href="https://wa.me/5511970251788?text=Qual%20seu%20endereço%20exato%20de%20retirada?" onclick="fbq('track','Contact')" rel="noopener">
       <i class="fab fa-whatsapp"></i> Confirmar Endereço
     </a>
   </div>
@@ -361,22 +388,11 @@
   <p><b>Monte Encante Pegue e Monte</b><br>Itaberaba • Zona Norte SP • WhatsApp para agendamento</p>
 </footer>
 
-<a class="btn-whatsapp-fixed" href="https://wa.me/5511970251788?text=Oi!%20Vi%20os%20kits%20no%20site%20monteencante.com.br" onclick="fbq('track','Contact')">
+<a class="btn-whatsapp-fixed" href="https://wa.me/5511970251788?text=Oi!%20Vi%20os%20kits%20no%20site%20monteencante.com.br" data-theme="botao-flutuante" rel="noopener">
   <i class="fab fa-whatsapp"></i> FALAR NO WHATSAPP
 </a>
 
-<script>
-  document.querySelectorAll('.tab-btn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const targetTab = btn.getAttribute('data-tab');
-      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-      document.getElementById(targetTab).classList.add('active');
-    });
-  });
-</script>
+<script src="/js/main.js"></script>
 
 </body>
 </html>
