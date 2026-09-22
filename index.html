@@ -9,6 +9,7 @@
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
   <link rel="canonical" href="https://monteencante.com.br/">
   <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="preload" as="image" href="/images/logo-monte-encante.svg">
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://monteencante.com.br/">
@@ -76,7 +77,9 @@
 <body>
   <header class="site-header">
     <a class="brand" href="#inicio" aria-label="Monte Encante - Início">
-      <span class="brand-mark">ME</span>
+      <span class="brand-symbol" aria-hidden="true">
+        <img src="/images/logo-monte-encante.svg" alt="">
+      </span>
       <span class="brand-copy">
         <strong>Monte Encante</strong>
         <small>Pegue & Monte • Itaberaba SP</small>
@@ -429,10 +432,9 @@
 
   <footer class="site-footer">
     <div class="section-shell footer-inner">
-      <div class="brand footer-brand">
-        <span class="brand-mark">ME</span>
-        <span class="brand-copy"><strong>Monte Encante</strong><small>Pegue & Monte</small></span>
-      </div>
+      <a class="footer-logo" href="#inicio" aria-label="Monte Encante - voltar ao início">
+        <img src="/images/logo-monte-encante.svg" alt="Monte Encante - Pegue e Monte">
+      </a>
       <p>Itaberaba • Zona Norte de São Paulo</p>
       <div class="footer-links">
         <a href="https://instagram.com/monteencante_festas" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
