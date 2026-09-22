@@ -3,18 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#fffaf7">
+  <meta name="theme-color" content="#fbf7f2">
   <title>Monte Encante | Pegue e Monte em Itaberaba, São Paulo</title>
-  <meta name="description" content="Kits Pegue e Monte para festas em Itaberaba, Zona Norte de São Paulo. Decorações práticas, lindas e fáceis de transportar. Consulte a disponibilidade da sua data.">
+  <meta name="description" content="Kits Pegue e Monte em Itaberaba, Zona Norte de São Paulo. Coleções para festas com montagem prática e atendimento pelo WhatsApp. Consulte sua data.">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
   <link rel="canonical" href="https://monteencante.com.br/">
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="preload" as="image" href="/images/logo-monte-encante.svg">
+  <link rel="preload" as="image" href="/images/unicornio.webp">
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://monteencante.com.br/">
-  <meta property="og:title" content="Monte Encante | Sua festa linda, prática e inesquecível">
-  <meta property="og:description" content="Kits Pegue e Monte a partir de R$129. Escolha o tema e consulte sua data pelo WhatsApp.">
+  <meta property="og:title" content="Monte Encante | Festas incríveis ao seu alcance">
+  <meta property="og:description" content="Pegue e Monte em Itaberaba, Zona Norte de São Paulo. Escolha sua coleção e consulte a disponibilidade.">
   <meta property="og:image" content="https://monteencante.com.br/og-image.jpg">
   <meta property="og:locale" content="pt_BR">
 
@@ -62,7 +63,7 @@
     "@type":"FAQPage",
     "mainEntity":[
       {"@type":"Question","name":"O que é um kit Pegue e Monte?","acceptedAnswer":{"@type":"Answer","text":"É uma decoração organizada para você retirar, transportar e montar com praticidade no local da sua festa."}},
-      {"@type":"Question","name":"Como consultar a disponibilidade?","acceptedAnswer":{"@type":"Answer","text":"Escolha um tema no site e fale com a Monte Encante pelo WhatsApp para consultar a data da sua festa."}},
+      {"@type":"Question","name":"Como consultar a disponibilidade?","acceptedAnswer":{"@type":"Answer","text":"Escolha um tema, informe a data e fale com a Monte Encante pelo WhatsApp para confirmar a disponibilidade."}},
       {"@type":"Question","name":"Onde é feita a retirada?","acceptedAnswer":{"@type":"Answer","text":"A retirada é na região de Itaberaba, Zona Norte de São Paulo. O endereço exato é confirmado no atendimento."}}
     ]
   }
@@ -70,11 +71,19 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+  <div class="top-note">
+    <span>Festas incríveis ao seu alcance</span>
+    <span class="top-note-dot"></span>
+    <span>Kits a partir de R$ 129</span>
+    <span class="top-note-dot"></span>
+    <span>Itaberaba • Zona Norte SP</span>
+  </div>
+
   <header class="site-header">
     <a class="brand" href="#inicio" aria-label="Monte Encante - Início">
       <span class="brand-symbol" aria-hidden="true">
@@ -82,374 +91,312 @@
       </span>
       <span class="brand-copy">
         <strong>Monte Encante</strong>
-        <small>Pegue & Monte • Itaberaba SP</small>
+        <small>Pegue & Monte</small>
       </span>
     </a>
 
     <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
-      <span></span><span></span><span></span>
+      <span></span><span></span>
     </button>
 
     <nav class="main-nav" aria-label="Navegação principal">
-      <a href="#temas">Temas</a>
-      <a href="#galeria">Galeria</a>
-      <a href="#como-funciona">Como funciona</a>
-      <a href="#depoimentos">Depoimentos</a>
-      <a class="nav-cta js-whatsapp" href="https://wa.me/5511910604169?text=Oi!%20Vi%20o%20site%20da%20Monte%20Encante%20e%20quero%20consultar%20uma%20data." target="_blank" rel="noopener" data-theme="menu">Consultar data</a>
+      <a href="#colecoes">Coleções</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#inspiracoes">Inspirações</a>
+      <a href="#duvidas">Dúvidas</a>
+      <button class="nav-cta js-open-consult" type="button">Consultar data <i class="fa-solid fa-arrow-right"></i></button>
     </nav>
   </header>
 
   <main>
-    <section id="inicio" class="hero section-shell">
-      <div class="hero-copy">
-        <span class="eyebrow">Pegue e Monte • Zona Norte de São Paulo</span>
-        <h1>Sua festa linda, prática e <em>inesquecível.</em></h1>
-        <p class="hero-lead">Decorações prontas para transformar sua comemoração sem complicação. Você escolhe o tema, retira o kit e monta do seu jeito.</p>
+    <section id="inicio" class="hero">
+      <div class="hero-orb hero-orb-one"></div>
+      <div class="hero-orb hero-orb-two"></div>
 
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#temas">Ver temas</a>
-          <a class="btn btn-secondary js-whatsapp" href="https://wa.me/5511910604169?text=Oi!%20Quero%20consultar%20a%20disponibilidade%20de%20um%20kit%20Monte%20Encante." target="_blank" rel="noopener" data-theme="hero">Consultar disponibilidade</a>
+      <div class="section-shell hero-grid">
+        <div class="hero-copy reveal">
+          <span class="kicker">Monte • Encante • Celebre</span>
+          <h1>Uma festa bonita não precisa ser <em>complicada.</em></h1>
+          <p class="hero-lead">Coleções Pegue e Monte pensadas para transformar sua comemoração com praticidade, delicadeza e uma presença que aparece em cada foto.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-luxe" href="#colecoes">Explorar coleções <i class="fa-solid fa-arrow-down"></i></a>
+            <button class="btn btn-ghost js-open-consult" type="button">Consultar minha data</button>
+          </div>
+
+          <div class="hero-microcopy">
+            <span><i class="fa-solid fa-check"></i> Retirada prática</span>
+            <span><i class="fa-solid fa-check"></i> Montagem descomplicada</span>
+            <span><i class="fa-solid fa-check"></i> Atendimento pelo WhatsApp</span>
+          </div>
         </div>
 
-        <div class="trust-row" aria-label="Diferenciais">
-          <span><i class="fa-solid fa-sparkles"></i> Kits a partir de R$129</span>
-          <span><i class="fa-solid fa-car-side"></i> Transporte prático</span>
-          <span><i class="fa-solid fa-heart"></i> Montagem descomplicada</span>
-        </div>
-      </div>
+        <div class="hero-stage reveal reveal-delay">
+          <div class="hero-stage-frame"></div>
 
-      <div class="hero-visual" aria-label="Inspirações de decoração Monte Encante">
-        <figure class="hero-photo hero-photo-main">
-          <img src="/images/unicornio.webp" alt="Decoração tema Unicórnio da Monte Encante" fetchpriority="high">
-        </figure>
-        <figure class="hero-photo hero-photo-top">
-          <img src="/images/safari-baby.webp" alt="Decoração tema Safari Baby da Monte Encante">
-        </figure>
-        <figure class="hero-photo hero-photo-bottom">
-          <img src="/images/patrulha-canina.webp" alt="Decoração tema Patrulha Canina da Monte Encante">
-        </figure>
-        <div class="price-badge">
-          <small>Kits a partir de</small>
-          <strong>R$ 129</strong>
+          <figure class="hero-image hero-image-main">
+            <img src="/images/unicornio.webp" alt="Kit Unicórnio do catálogo Monte Encante" fetchpriority="high">
+          </figure>
+
+          <figure class="hero-image hero-image-secondary">
+            <img src="/images/safari-baby.webp" alt="Kit Safari Baby do catálogo Monte Encante">
+          </figure>
+
+          <div class="hero-seal">
+            <span>A partir de</span>
+            <strong>R$129</strong>
+            <small>por kit</small>
+          </div>
+
+          <div class="hero-caption">
+            <span>Curadoria Monte Encante</span>
+            <strong>11 coleções</strong>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="social-proof-strip">
-      <div class="section-shell proof-grid">
-        <div><strong>11+</strong><span>temas disponíveis</span></div>
-        <div><strong>3 passos</strong><span>para sua festa ganhar vida</span></div>
-        <div><strong>WhatsApp</strong><span>consulta rápida de disponibilidade</span></div>
+    <section class="signature-strip">
+      <div class="section-shell signature-grid">
+        <div><span>01</span><p><strong>Escolha</strong> uma coleção que combine com a comemoração.</p></div>
+        <div><span>02</span><p><strong>Consulte</strong> a disponibilidade para sua data.</p></div>
+        <div><span>03</span><p><strong>Retire e monte</strong> com praticidade.</p></div>
       </div>
     </section>
 
-    <section id="temas" class="catalog section-shell">
-      <div class="section-heading">
+    <section id="colecoes" class="collections section-shell">
+      <div class="editorial-heading reveal">
         <div>
-          <span class="eyebrow">Escolha seu favorito</span>
-          <h2>Temas que fazem a festa acontecer</h2>
+          <span class="kicker">Nossa curadoria</span>
+          <h2>Coleções para cada jeito de celebrar.</h2>
         </div>
-        <p>Filtre por estilo, veja as fotos e consulte a disponibilidade diretamente pelo WhatsApp.</p>
+        <p>Escolha por estilo, abra os detalhes e consulte a data sem sair do fluxo. O atendimento continua humano, mas o caminho até ele ficou muito mais simples.</p>
       </div>
 
-      <div class="filter-row" role="group" aria-label="Filtrar temas">
-        <button class="filter-btn active" type="button" data-filter="todos">Todos</button>
-        <button class="filter-btn" type="button" data-filter="bebes">Bebês</button>
-        <button class="filter-btn" type="button" data-filter="infantil">Infantil</button>
-        <button class="filter-btn" type="button" data-filter="encantados">Encantados</button>
-        <button class="filter-btn" type="button" data-filter="herois">Heróis</button>
-        <button class="filter-btn" type="button" data-filter="teen">Teen</button>
+      <div class="collection-toolbar reveal">
+        <div class="filters" role="group" aria-label="Filtrar coleções">
+          <button class="filter-btn active" type="button" data-filter="todos">Todas</button>
+          <button class="filter-btn" type="button" data-filter="bebes">Bebês</button>
+          <button class="filter-btn" type="button" data-filter="infantil">Infantil</button>
+          <button class="filter-btn" type="button" data-filter="encantados">Encantados</button>
+          <button class="filter-btn" type="button" data-filter="herois">Heróis</button>
+          <button class="filter-btn" type="button" data-filter="teen">Teen & adulto</button>
+        </div>
+        <button class="text-action js-open-consult" type="button">Já sei o tema <i class="fa-solid fa-arrow-right"></i></button>
       </div>
 
-      <div class="theme-grid">
-        <article class="theme-card" data-category="bebes">
-          <div class="theme-media">
-            <img src="/images/safari-baby.webp" alt="Kit Safari Baby" loading="lazy">
-            <span class="theme-pill">A partir de R$129</span>
-          </div>
-          <div class="theme-body">
-            <span class="theme-type">Chá de bebê • 20 peças</span>
-            <h3>Safari Baby</h3>
-            <a class="theme-link js-whatsapp" href="https://wa.me/5511910604169?text=Oi!%20Quero%20consultar%20o%20kit%20Safari%20Baby." target="_blank" rel="noopener" data-theme="Safari Baby">Consultar este tema <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </article>
-
-        <article class="theme-card" data-category="bebes infantil">
-          <div class="theme-media">
-            <img src="/images/mickey-baby.webp" alt="Kit Mickey Baby" loading="lazy">
-            <span class="theme-pill">R$139</span>
-          </div>
-          <div class="theme-body">
-            <span class="theme-type">Clássico • 18 peças</span>
-            <h3>Mickey Baby</h3>
-            <a class="theme-link js-whatsapp" href="https://wa.me/5511910604169?text=Oi!%20Quero%20consultar%20o%20kit%20Mickey%20Baby." target="_blank" rel="noopener" data-theme="Mickey Baby">Consultar este tema <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </article>
-
-        <article class="theme-card featured-card" data-category="infantil herois">
-          <div class="theme-media">
-            <img src="/images/patrulha-canina.webp" alt="Kit Patrulha Canina" loading="lazy">
-            <span class="theme-pill accent">Mais procurado</span>
-          </div>
-          <div class="theme-body">
-            <span class="theme-type">Infantil • 25 peças</span>
-            <h3>Patrulha Canina</h3>
-            <a class="theme-link js-whatsapp" href="https://wa.me/5511910604169?text=Oi!%20Quero%20consultar%20o%20kit%20Patrulha%20Canina." target="_blank" rel="noopener" data-theme="Patrulha Canina">Consultar este tema <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </article>
-
-        <article class="theme-card" data-category="infantil">
-          <div class="theme-media">
-            <img src="/images/dinossauros.webp" alt="Kit Dinossauros" loading="lazy">
-            <span class="theme-pill">R$149</span>
-          </div>
-          <div class="theme-body">
-            <span class="theme-type">Aventura • 22 peças</span>
-            <h3>Dinossauros</h3>
-            <a class="theme-link js-whatsapp" href="https://wa.me/5511910604169?text=Oi!%20Quero%20consultar%20o%20kit%20Dinossauros." target="_blank" rel="noopener" data-theme="Dinossauros">Consultar este tema <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </article>
-
-        <article class="theme-card" data-category="infantil">
-          <div class="theme-media">
-            <img src="/images/carros.webp" alt="Kit Carros" loading="lazy">
-            <span class="theme-pill">R$159</span>
-          </div>
-          <div class="theme-body">
-            <span class="theme-type">Velocidade • 24 peças</span>
-            <h3>Carros</h3>
-            <a class="theme-link js-whatsapp" href="https://wa.me/5511910604169?text=Oi!%20Quero%20consultar%20o%20kit%20Carros." target="_blank" rel="noopener" data-theme="Carros">Consultar este tema <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </article>
-
-        <article class="theme-card featured-card" data-category="encantados infantil">
-          <div class="theme-media">
-            <img src="/images/unicornio.webp" alt="Kit Unicórnio" loading="lazy">
-            <span class="theme-pill accent">Queridinho</span>
-          </div>
-          <div class="theme-body">
-            <span class="theme-type">Encantado • 23 peças</span>
-            <h3>Unicórnio</h3>
-            <a class="theme-link js-whatsapp" href="https://wa.me/5511910604169?text=Oi!%20Quero%20consultar%20o%20kit%20Unicórnio." target="_blank" rel="noopener" data-theme="Unicórnio">Consultar este tema <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </article>
-
-        <article class="theme-card" data-category="encantados infantil">
-          <div class="theme-media">
-            <img src="/images/princesas.webp" alt="Kit Princesas" loading="lazy">
-            <span class="theme-pill">R$169</span>
-          </div>
-          <div class="theme-body">
-            <span class="theme-type">Encantado • 26 peças</span>
-            <h3>Princesas</h3>
-            <a class="theme-link js-whatsapp" href="https://wa.me/5511910604169?text=Oi!%20Quero%20consultar%20o%20kit%20Princesas." target="_blank" rel="noopener" data-theme="Princesas">Consultar este tema <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </article>
-
-        <article class="theme-card" data-category="encantados infantil">
-          <div class="theme-media">
-            <img src="/images/minnie-rosa.webp" alt="Kit Minnie Rosa" loading="lazy">
-            <span class="theme-pill">R$149</span>
-          </div>
-          <div class="theme-body">
-            <span class="theme-type">Clássico • 21 peças</span>
-            <h3>Minnie Rosa</h3>
-            <a class="theme-link js-whatsapp" href="https://wa.me/5511910604169?text=Oi!%20Quero%20consultar%20o%20kit%20Minnie%20Rosa." target="_blank" rel="noopener" data-theme="Minnie Rosa">Consultar este tema <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </article>
-
-        <article class="theme-card" data-category="herois infantil">
-          <div class="theme-media">
-            <img src="/images/homem-aranha.webp" alt="Kit Homem-Aranha" loading="lazy">
-            <span class="theme-pill">R$169</span>
-          </div>
-          <div class="theme-body">
-            <span class="theme-type">Heróis • 24 peças</span>
-            <h3>Homem-Aranha</h3>
-            <a class="theme-link js-whatsapp" href="https://wa.me/5511910604169?text=Oi!%20Quero%20consultar%20o%20kit%20Homem-Aranha." target="_blank" rel="noopener" data-theme="Homem-Aranha">Consultar este tema <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </article>
-
-        <article class="theme-card" data-category="teen">
-          <div class="theme-media">
-            <img src="/images/stranger-things.webp" alt="Kit Stranger Things" loading="lazy">
-            <span class="theme-pill">R$199</span>
-          </div>
-          <div class="theme-body">
-            <span class="theme-type">Teen • 22 peças</span>
-            <h3>Stranger Things</h3>
-            <a class="theme-link js-whatsapp" href="https://wa.me/5511910604169?text=Oi!%20Quero%20consultar%20o%20kit%20Stranger%20Things." target="_blank" rel="noopener" data-theme="Stranger Things">Consultar este tema <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </article>
-
-        <article class="theme-card" data-category="teen">
-          <div class="theme-media">
-            <img src="/images/tardezinha.webp" alt="Kit Tardezinha" loading="lazy">
-            <span class="theme-pill">R$189</span>
-          </div>
-          <div class="theme-body">
-            <span class="theme-type">Adulto & Teen • 20 peças</span>
-            <h3>Tardezinha</h3>
-            <a class="theme-link js-whatsapp" href="https://wa.me/5511910604169?text=Oi!%20Quero%20consultar%20o%20kit%20Tardezinha." target="_blank" rel="noopener" data-theme="Tardezinha">Consultar este tema <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </article>
-      </div>
+      <div id="collectionGrid" class="collection-grid" aria-live="polite"></div>
     </section>
 
-    <section id="galeria" class="gallery-section">
-      <div class="section-shell">
-        <div class="section-heading gallery-heading">
-          <div>
-            <span class="eyebrow">Galeria Monte Encante</span>
-            <h2>Uma festa bonita começa no primeiro olhar</h2>
-          </div>
-          <p>Imagens atuais do catálogo da marca. A estrutura já está pronta para receber as fotos reais das festas assim que tivermos acesso ao acervo.</p>
+    <section id="experiencia" class="experience">
+      <div class="section-shell experience-grid">
+        <div class="experience-copy reveal">
+          <span class="kicker kicker-light">Experiência Monte Encante</span>
+          <h2>Bonito no olhar.<br><em>Leve na rotina.</em></h2>
+          <p>O Pegue e Monte foi feito para quem quer uma festa com presença visual sem transformar a preparação em um projeto interminável.</p>
+          <button class="btn btn-light js-open-consult" type="button">Quero consultar uma data</button>
         </div>
 
-        <div class="gallery-grid">
-          <button class="gallery-item gallery-tall" type="button" data-image="/images/safari-baby.webp" aria-label="Ampliar Safari Baby"><img src="/images/safari-baby.webp" alt="Inspiração de decoração Safari Baby" loading="lazy"></button>
-          <button class="gallery-item" type="button" data-image="/images/princesas.webp" aria-label="Ampliar Princesas"><img src="/images/princesas.webp" alt="Inspiração de decoração Princesas" loading="lazy"></button>
-          <button class="gallery-item" type="button" data-image="/images/patrulha-canina.webp" aria-label="Ampliar Patrulha Canina"><img src="/images/patrulha-canina.webp" alt="Inspiração de decoração Patrulha Canina" loading="lazy"></button>
-          <button class="gallery-item gallery-wide" type="button" data-image="/images/unicornio.webp" aria-label="Ampliar Unicórnio"><img src="/images/unicornio.webp" alt="Inspiração de decoração Unicórnio" loading="lazy"></button>
-          <button class="gallery-item" type="button" data-image="/images/homem-aranha.webp" aria-label="Ampliar Homem-Aranha"><img src="/images/homem-aranha.webp" alt="Inspiração de decoração Homem-Aranha" loading="lazy"></button>
-          <button class="gallery-item" type="button" data-image="/images/tardezinha.webp" aria-label="Ampliar Tardezinha"><img src="/images/tardezinha.webp" alt="Inspiração de decoração Tardezinha" loading="lazy"></button>
-        </div>
-
-        <a class="instagram-card" href="https://instagram.com/monteencante_festas" target="_blank" rel="noopener">
-          <span class="instagram-icon"><i class="fa-brands fa-instagram"></i></span>
-          <span><strong>Mais inspirações no Instagram</strong><small>@monteencante_festas</small></span>
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
-      </div>
-    </section>
-
-    <section class="benefits section-shell">
-      <div class="section-heading centered">
-        <span class="eyebrow">Bonito por fora. Simples por dentro.</span>
-        <h2>Por que escolher a Monte Encante?</h2>
-      </div>
-      <div class="benefit-grid">
-        <article><span class="icon-box"><i class="fa-solid fa-wand-magic-sparkles"></i></span><h3>Encanto</h3><p>Temas selecionados para criar uma mesa que chama atenção e rende fotos lindas.</p></article>
-        <article><span class="icon-box"><i class="fa-solid fa-box-open"></i></span><h3>Praticidade</h3><p>Itens organizados para facilitar retirada, transporte e montagem.</p></article>
-        <article><span class="icon-box"><i class="fa-solid fa-piggy-bank"></i></span><h3>Economia</h3><p>Uma alternativa inteligente para ter uma decoração bonita sem contratar uma produção completa.</p></article>
-        <article><span class="icon-box"><i class="fa-brands fa-whatsapp"></i></span><h3>Atendimento próximo</h3><p>Consulta de tema e disponibilidade direto pelo WhatsApp, sem formulário interminável.</p></article>
-      </div>
-    </section>
-
-    <section id="como-funciona" class="steps-section">
-      <div class="section-shell steps-wrap">
-        <div class="steps-copy">
-          <span class="eyebrow">Do tema à festa</span>
-          <h2>Três passos e pronto: é hora de comemorar.</h2>
-          <p>A proposta é simples: você escolhe o tema, combina a retirada e recebe o kit organizado para montar.</p>
-          <a class="text-link js-whatsapp" href="https://wa.me/5511910604169?text=Oi!%20Quero%20entender%20como%20funciona%20o%20Pegue%20e%20Monte." target="_blank" rel="noopener" data-theme="como-funciona">Tirar uma dúvida no WhatsApp <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-        <div class="steps-list">
-          <article><span>01</span><div><h3>Escolha</h3><p>Encontre o tema que combina com sua comemoração.</p></div></article>
-          <article><span>02</span><div><h3>Reserve</h3><p>Consulte a disponibilidade da sua data pelo WhatsApp.</p></div></article>
-          <article><span>03</span><div><h3>Retire & monte</h3><p>Leve o kit e prepare sua decoração com praticidade.</p></div></article>
+        <div class="experience-cards">
+          <article class="experience-card reveal">
+            <span class="experience-index">01</span>
+            <i class="fa-solid fa-gem"></i>
+            <h3>Curadoria visual</h3>
+            <p>Temas escolhidos para criar composições marcantes e harmônicas.</p>
+          </article>
+          <article class="experience-card reveal reveal-delay">
+            <span class="experience-index">02</span>
+            <i class="fa-solid fa-car-side"></i>
+            <h3>Praticidade real</h3>
+            <p>Um formato pensado para facilitar retirada, transporte e montagem.</p>
+          </article>
+          <article class="experience-card reveal">
+            <span class="experience-index">03</span>
+            <i class="fa-brands fa-whatsapp"></i>
+            <h3>Atendimento próximo</h3>
+            <p>Você chega ao WhatsApp já com tema e data organizados para agilizar a conversa.</p>
+          </article>
+          <article class="experience-card reveal reveal-delay">
+            <span class="experience-index">04</span>
+            <i class="fa-solid fa-camera-retro"></i>
+            <h3>Feito para celebrar</h3>
+            <p>Mais atenção ao cenário, mais espaço para aproveitar o momento.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="depoimentos" class="testimonials section-shell">
-      <div class="section-heading">
+    <section id="inspiracoes" class="inspirations section-shell">
+      <div class="editorial-heading reveal">
         <div>
-          <span class="eyebrow">Prova social</span>
-          <h2>Um espaço para as histórias de quem já festejou com a gente</h2>
+          <span class="kicker">Inspirações do catálogo</span>
+          <h2>Detalhes que mudam a atmosfera.</h2>
         </div>
-        <p class="preview-note"><i class="fa-solid fa-pen"></i> Textos provisórios nesta prévia. Substituir pelos depoimentos reais antes da publicação final.</p>
+        <p>Estas são imagens das coleções atuais. Quando o acervo de festas reais estiver disponível, esta mesma galeria passa a contar histórias de celebrações verdadeiras.</p>
       </div>
 
-      <div class="testimonial-grid">
-        <article class="testimonial-card">
-          <div class="stars" aria-label="5 estrelas">★★★★★</div>
-          <blockquote>“O kit veio organizado, a montagem foi tranquila e o resultado ficou lindo nas fotos.”</blockquote>
-          <footer><span class="avatar">A</span><div><strong>Cliente Monte Encante</strong><small>Depoimento provisório</small></div></footer>
-        </article>
-        <article class="testimonial-card">
-          <div class="stars" aria-label="5 estrelas">★★★★★</div>
-          <blockquote>“Foi uma forma prática de deixar a festa com cara de decoração profissional sem complicar.”</blockquote>
-          <footer><span class="avatar">M</span><div><strong>Cliente Monte Encante</strong><small>Depoimento provisório</small></div></footer>
-        </article>
-        <article class="testimonial-card">
-          <div class="stars" aria-label="5 estrelas">★★★★★</div>
-          <blockquote>“Adoramos a experiência. O tema chamou atenção e conseguimos montar tudo com calma.”</blockquote>
-          <footer><span class="avatar">J</span><div><strong>Cliente Monte Encante</strong><small>Depoimento provisório</small></div></footer>
-        </article>
+      <div class="mosaic">
+        <button class="mosaic-item mosaic-a reveal" type="button" data-image="/images/princesas.webp" aria-label="Ampliar coleção Princesas">
+          <img src="/images/princesas.webp" alt="Coleção Princesas" loading="lazy">
+          <span>Princesas</span>
+        </button>
+        <button class="mosaic-item mosaic-b reveal reveal-delay" type="button" data-image="/images/patrulha-canina.webp" aria-label="Ampliar coleção Patrulha Canina">
+          <img src="/images/patrulha-canina.webp" alt="Coleção Patrulha Canina" loading="lazy">
+          <span>Patrulha Canina</span>
+        </button>
+        <button class="mosaic-item mosaic-c reveal" type="button" data-image="/images/tardezinha.webp" aria-label="Ampliar coleção Tardezinha">
+          <img src="/images/tardezinha.webp" alt="Coleção Tardezinha" loading="lazy">
+          <span>Tardezinha</span>
+        </button>
+        <button class="mosaic-item mosaic-d reveal reveal-delay" type="button" data-image="/images/homem-aranha.webp" aria-label="Ampliar coleção Homem-Aranha">
+          <img src="/images/homem-aranha.webp" alt="Coleção Homem-Aranha" loading="lazy">
+          <span>Homem-Aranha</span>
+        </button>
+      </div>
+
+      <a class="instagram-line reveal" href="https://instagram.com/monteencante_festas" target="_blank" rel="noopener">
+        <span class="instagram-round"><i class="fa-brands fa-instagram"></i></span>
+        <span class="instagram-copy"><small>Siga para acompanhar novas inspirações</small><strong>@monteencante_festas</strong></span>
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </a>
+    </section>
+
+    <section class="location-editorial">
+      <div class="section-shell location-editorial-grid">
+        <div class="location-number reveal">SP</div>
+        <div class="location-copy reveal reveal-delay">
+          <span class="kicker">Retirada em São Paulo</span>
+          <h2>Itaberaba, Zona Norte.</h2>
+          <p>Endereço exato e horários são confirmados durante o atendimento para sua reserva.</p>
+        </div>
+        <button class="round-action js-open-consult reveal" type="button" aria-label="Consultar retirada">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
       </div>
     </section>
 
-    <section class="location section-shell">
-      <div class="location-card">
-        <div class="location-icon"><i class="fa-solid fa-location-dot"></i></div>
-        <div>
-          <span class="eyebrow">Retirada</span>
-          <h2>Itaberaba • Zona Norte de São Paulo</h2>
-          <p>O endereço exato e os horários de retirada são confirmados durante o atendimento.</p>
+    <section id="duvidas" class="faq section-shell">
+      <div class="faq-layout">
+        <div class="faq-intro reveal">
+          <span class="kicker">Antes de celebrar</span>
+          <h2>Dúvidas simples.<br>Respostas diretas.</h2>
+          <p>Se ainda faltar alguma informação, o WhatsApp fica a um toque de distância.</p>
+          <button class="text-action js-open-consult" type="button">Falar com a Monte Encante <i class="fa-solid fa-arrow-right"></i></button>
         </div>
-        <a class="btn btn-dark js-whatsapp" href="https://wa.me/5511910604169?text=Oi!%20Quero%20confirmar%20o%20endereço%20e%20os%20horários%20de%20retirada." target="_blank" rel="noopener" data-theme="localizacao">Confirmar no WhatsApp</a>
+
+        <div class="faq-list reveal reveal-delay">
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false"><span>O que é um kit Pegue e Monte?</span><i class="fa-solid fa-plus"></i></button>
+            <div class="faq-answer"><p>É uma decoração preparada para você retirar, transportar e montar no local da festa. A proposta é unir praticidade, economia e um resultado bonito.</p></div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false"><span>Como consulto a disponibilidade?</span><i class="fa-solid fa-plus"></i></button>
+            <div class="faq-answer"><p>Escolha sua coleção e informe a data no formulário do site. Em seguida, o WhatsApp abre com as informações organizadas para a equipe confirmar a disponibilidade.</p></div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false"><span>Os kits cabem no carro?</span><i class="fa-solid fa-plus"></i></button>
+            <div class="faq-answer"><p>Os kits são pensados para transporte prático. Como cada composição pode variar, confirme os detalhes da coleção escolhida no atendimento.</p></div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false"><span>Onde retiro o kit?</span><i class="fa-solid fa-plus"></i></button>
+            <div class="faq-answer"><p>A retirada acontece na região de Itaberaba, Zona Norte de São Paulo. O endereço exato é confirmado durante o atendimento.</p></div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="faq section-shell">
-      <div class="section-heading centered">
-        <span class="eyebrow">Dúvidas frequentes</span>
-        <h2>Antes de reservar</h2>
-      </div>
-
-      <div class="faq-list">
-        <article class="faq-item">
-          <button class="faq-question" type="button" aria-expanded="false"><span>O que é um kit Pegue e Monte?</span><i class="fa-solid fa-plus"></i></button>
-          <div class="faq-answer"><p>É uma decoração preparada para você retirar, transportar e montar no local da festa. A proposta é unir praticidade, economia e um resultado bonito.</p></div>
-        </article>
-        <article class="faq-item">
-          <button class="faq-question" type="button" aria-expanded="false"><span>Como consulto minha data?</span><i class="fa-solid fa-plus"></i></button>
-          <div class="faq-answer"><p>Clique em qualquer botão de WhatsApp, diga o tema desejado e informe a data da comemoração. A equipe confirma a disponibilidade.</p></div>
-        </article>
-        <article class="faq-item">
-          <button class="faq-question" type="button" aria-expanded="false"><span>Os kits cabem no carro?</span><i class="fa-solid fa-plus"></i></button>
-          <div class="faq-answer"><p>Os kits são pensados para um transporte prático. Como cada composição pode variar, confirme os detalhes do tema escolhido no atendimento.</p></div>
-        </article>
-        <article class="faq-item">
-          <button class="faq-question" type="button" aria-expanded="false"><span>Onde retiro o kit?</span><i class="fa-solid fa-plus"></i></button>
-          <div class="faq-answer"><p>A retirada acontece na região de Itaberaba, Zona Norte de São Paulo. O endereço exato é enviado após o contato.</p></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="final-cta">
-      <div class="section-shell final-cta-inner">
-        <div>
-          <span class="eyebrow light">Sua data pode estar disponível</span>
-          <h2>Já imaginou a sua festa assim?</h2>
-          <p>Escolha um tema e fale com a Monte Encante para consultar a disponibilidade.</p>
+    <section class="closing">
+      <div class="section-shell closing-grid">
+        <div class="closing-mark reveal">
+          <img src="/images/logo-monte-encante.svg" alt="Monte Encante - Pegue e Monte" loading="lazy">
         </div>
-        <a class="btn btn-light js-whatsapp" href="https://wa.me/5511910604169?text=Oi!%20Vi%20os%20temas%20no%20site%20e%20quero%20consultar%20minha%20data." target="_blank" rel="noopener" data-theme="cta-final"><i class="fa-brands fa-whatsapp"></i> Consultar minha data</a>
+        <div class="closing-copy reveal reveal-delay">
+          <span class="kicker kicker-light">Sua próxima celebração começa aqui</span>
+          <h2>Escolha o tema.<br><em>A gente cuida do próximo passo.</em></h2>
+          <button class="btn btn-light js-open-consult" type="button"><i class="fa-brands fa-whatsapp"></i> Consultar minha data</button>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="section-shell footer-inner">
-      <a class="footer-logo" href="#inicio" aria-label="Monte Encante - voltar ao início">
-        <img src="/images/logo-monte-encante.svg" alt="Monte Encante - Pegue e Monte">
-      </a>
-      <p>Itaberaba • Zona Norte de São Paulo</p>
-      <div class="footer-links">
+    <div class="section-shell footer-grid">
+      <div>
+        <strong>Monte Encante</strong>
+        <p>Pegue & Monte • Itaberaba, Zona Norte de São Paulo</p>
+      </div>
+      <div class="footer-center">Festas incríveis ao seu alcance.</div>
+      <div class="footer-social">
         <a href="https://instagram.com/monteencante_festas" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-        <a class="js-whatsapp" href="https://wa.me/5511910604169" target="_blank" rel="noopener" aria-label="WhatsApp" data-theme="footer"><i class="fa-brands fa-whatsapp"></i></a>
+        <a class="js-whatsapp-direct" href="https://wa.me/5511910604169" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
       </div>
     </div>
   </footer>
 
-  <a class="floating-whatsapp js-whatsapp" href="https://wa.me/5511910604169?text=Oi!%20Quero%20consultar%20um%20kit%20Monte%20Encante." target="_blank" rel="noopener" aria-label="Falar com a Monte Encante no WhatsApp" data-theme="flutuante">
-    <i class="fa-brands fa-whatsapp"></i><span>Consultar data</span>
-  </a>
+  <button class="floating-consult js-open-consult" type="button">
+    <span class="floating-icon"><i class="fa-brands fa-whatsapp"></i></span>
+    <span><small>Quer saber se sua data está livre?</small><strong>Consultar disponibilidade</strong></span>
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <div class="sheet-backdrop" data-close-consult></div>
+  <aside class="consult-sheet" aria-hidden="true" aria-labelledby="consultTitle">
+    <button class="sheet-close" type="button" data-close-consult aria-label="Fechar consulta"><i class="fa-solid fa-xmark"></i></button>
+    <div class="sheet-logo"><img src="/images/logo-monte-encante.svg" alt=""></div>
+    <span class="kicker">Consulta rápida</span>
+    <h2 id="consultTitle">Vamos encontrar a coleção para sua data.</h2>
+    <p>Preencha só o essencial. Depois, o WhatsApp abre com tudo organizado para você.</p>
+
+    <form id="consultForm" class="consult-form">
+      <label>
+        <span>Seu nome</span>
+        <input id="consultName" name="name" type="text" autocomplete="name" placeholder="Como podemos te chamar?" required>
+      </label>
+
+      <div class="form-row">
+        <label>
+          <span>Data da festa</span>
+          <input id="consultDate" name="date" type="date" required>
+        </label>
+        <label>
+          <span>Coleção</span>
+          <select id="consultTheme" name="theme" required>
+            <option value="">Escolher</option>
+          </select>
+        </label>
+      </div>
+
+      <label>
+        <span>Bairro ou região <small>opcional</small></span>
+        <input id="consultRegion" name="region" type="text" autocomplete="address-level3" placeholder="Ex.: Freguesia do Ó">
+      </label>
+
+      <button class="btn btn-luxe btn-full" type="submit"><i class="fa-brands fa-whatsapp"></i> Continuar no WhatsApp</button>
+      <small class="form-note">Nenhuma reserva é confirmada automaticamente. A equipe confirma disponibilidade e detalhes pelo WhatsApp.</small>
+    </form>
+  </aside>
+
+  <div class="collection-modal" aria-hidden="true">
+    <div class="collection-modal-backdrop" data-close-collection></div>
+    <div class="collection-modal-card">
+      <button class="collection-modal-close" type="button" data-close-collection aria-label="Fechar detalhes"><i class="fa-solid fa-xmark"></i></button>
+      <div class="collection-modal-media"><img id="modalImage" src="" alt=""></div>
+      <div class="collection-modal-content">
+        <span id="modalCategory" class="kicker"></span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+        <div class="modal-meta">
+          <div><small>Valor</small><strong id="modalPrice"></strong></div>
+          <div><small>Composição</small><strong id="modalPieces"></strong></div>
+        </div>
+        <button id="modalConsult" class="btn btn-luxe btn-full" type="button">Consultar esta coleção</button>
+      </div>
+    </div>
+  </div>
 
   <div class="lightbox" aria-hidden="true">
     <button class="lightbox-close" type="button" aria-label="Fechar imagem"><i class="fa-solid fa-xmark"></i></button>
-    <img src="" alt="Foto ampliada da Monte Encante">
+    <img src="" alt="Imagem ampliada do catálogo Monte Encante">
   </div>
 
   <script src="/js/main.js"></script>
