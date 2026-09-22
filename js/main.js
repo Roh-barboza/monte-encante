@@ -1,51 +1,135 @@
-(function () {
+(function(){
   'use strict';
 
-  // Abas dos temas
-  document.querySelectorAll('.tab-btn').forEach(btn => {
-    btn.addEventListener('click', e => {
-      e.preventDefault();
-      const targetTab = btn.getAttribute('data-tab');
-      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-      document.getElementById(targetTab).classList.add('active');
+  const track = (name, params={}) => {
+    try { gtag('event', name, params); } catch(e) {}
+  };
+
+  const trackMeta = (name) => {
+    try { fbq('track', name); } catch(e) {}
+  };
+
+  document.querySelectorAll('.js-whatsapp').forEach(link => {
+    link.addEventListener('click', () => {
+      const theme = link.dataset.theme || 'geral';
+      track('clique_whatsapp', { theme });
+      trackMeta('Contact');
     });
   });
 
-  // FAQ accordion
-  document.querySelectorAll('.faq-question').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const item = btn.closest('.faq-item');
-      const isOpen = item.classList.contains('open');
-      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-      document.querySelectorAll('.faq-question').forEach(b => b.setAttribute('aria-expanded', 'false'));
-      if (!isOpen) {
-        item.classList.add('open');
-        btn.setAttribute('aria-expanded', 'true');
-      }
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.main-nav');
+
+  if(menuToggle && nav){
+    menuToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded','false');
+      });
+    });
+  }
+
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.theme-card');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const filter = button.dataset.filter;
+
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      cards.forEach(card => {
+        const categories = (card.dataset.category || '').split(' ');
+        card.hidden = filter !== 'todos' && !categories.includes(filter);
+      });
+
+      track('filtro_tema', { categoria: filter });
     });
   });
 
-  // Evento de clique no botão de reservar (WhatsApp) — GA4 + Pixel
-  document.querySelectorAll('.btn-consultar, .btn-whatsapp-fixed').forEach(btn => {
-    btn.addEventListener('click', () => {
-      try { gtag('event', 'clique_whatsapp', { theme: btn.getAttribute('data-theme') || 'geral' }); } catch (e) { /* gtag indisponível */ }
-      try { fbq('track', 'Contact'); } catch (e) { /* pixel indisponível */ }
-    });
-  });
+  document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+      const item = button.closest('.faq-item');
+      const answer = item.querySelector('.faq-answer');
+      const isOpen = button.getAttribute('aria-expanded') === 'true';
 
-  // Rastreamento de visualização de seção "Como funciona"
-  if ('IntersectionObserver' in window) {
-    const obs = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          try { gtag('event', 'view_secao_como_funciona'); } catch (e) { /* gtag indisponível */ }
-          obs.unobserve(entry.target);
+      document.querySelectorAll('.faq-question').forEach(other => {
+        if(other !== button){
+          other.setAttribute('aria-expanded','false');
+          const otherAnswer = other.closest('.faq-item').querySelector('.faq-answer');
+          otherAnswer.style.maxHeight = null;
         }
       });
-    }, { threshold: 0.5 });
-    const steps = document.querySelector('.steps');
-    if (steps) obs.observe(steps);
+
+      button.setAttribute('aria-expanded', String(!isOpen));
+      answer.style.maxHeight = isOpen ? null : answer.scrollHeight + 'px';
+    });
+  });
+
+  const lightbox = document.querySelector('.lightbox');
+  const lightboxImg = lightbox ? lightbox.querySelector('img') : null;
+  const lightboxClose = lightbox ? lightbox.querySelector('.lightbox-close') : null;
+
+  const closeLightbox = () => {
+    if(!lightbox) return;
+    lightbox.classList.remove('open');
+    lightbox.setAttribute('aria-hidden','true');
+    document.body.style.overflow = '';
+  };
+
+  document.querySelectorAll('.gallery-item').forEach(item => {
+    item.addEventListener('click', () => {
+      if(!lightbox || !lightboxImg) return;
+      lightboxImg.src = item.dataset.image;
+      lightboxImg.alt = item.querySelector('img')?.alt || 'Foto ampliada da Monte Encante';
+      lightbox.classList.add('open');
+      lightbox.setAttribute('aria-hidden','false');
+      document.body.style.overflow = 'hidden';
+      track('abrir_galeria', { imagem: item.dataset.image });
+    });
+  });
+
+  if(lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+  if(lightbox){
+    lightbox.addEventListener('click', e => {
+      if(e.target === lightbox) closeLightbox();
+    });
+  }
+
+  document.addEventListener('keydown', e => {
+    if(e.key === 'Escape') closeLightbox();
+  });
+
+  if('IntersectionObserver' in window){
+    const observed = [
+      ['#temas','view_secao_temas'],
+      ['#galeria','view_secao_galeria'],
+      ['#como-funciona','view_secao_como_funciona'],
+      ['#depoimentos','view_secao_depoimentos']
+    ];
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          const eventName = entry.target.dataset.analyticsEvent;
+          if(eventName) track(eventName);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold:.35 });
+
+    observed.forEach(([selector,eventName]) => {
+      const el = document.querySelector(selector);
+      if(el){
+        el.dataset.analyticsEvent = eventName;
+        observer.observe(el);
+      }
+    });
   }
 })();
